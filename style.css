@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+*,*::before,*::after{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Figtree';
+}
+
+
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.wrapper-contents{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 7px 7px 1px black;
+}
+
+.head-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.head-wrapper>img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.head-wrapper>span{
+    margin: 10px 0px;
+    width: fit-content;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+}
+
+.head-wrapper>p{
+    font-size: 14px;
+    margin-top: -5px;
+    color:hsl(0, 0%, 7%);
+}
+
+.information-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 6px;
+}
+
+.information-wrapper h2{
+    font-weight: 1000;
+}
+
+
+.information-wrapper h2:hover{
+    cursor: pointer;
+    color:hsl(47, 88%, 63%);
+}
+
+.information-wrapper p{
+    color:hsl(0, 0%, 42%);
+}
+
+.bottom-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 10px 0px 5px 10px;
+}
+
+.bottom-wrapper img{
+    width:30px;
+}
+
+.bottom-wrapper h5{
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+@media (max-width:375px) {
+
+   
+    .main-wrapper{
+        padding: 0px 20px;
+    }
+    
+    .wrapper-contents{
+        width: auto;
+        max-width: 300px;
+        padding: 10px;
+
+    }
+
+    .head-wrapper img{
+    }
+}
